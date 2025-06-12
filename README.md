@@ -26,6 +26,7 @@ A real-time Sign Language Recognition system that uses computer vision to identi
 ## 📁 Project Structure
 
 📦 Sign-Language-Recognition/
+
 ├── 📁 model/
 
 │ ├── keras_model.h5 # Trained deep learning model
