@@ -13,7 +13,9 @@ A real-time Sign Language Recognition system that uses computer vision to identi
 
 ## 🛠️ Tech Stack
 
-- **Programming Language:** Python
+- **Language:** Python
+- **Model Type:** CNN (trained with Teachable Machine and custom dataset)
+- **Hardware:** Works with standard webcam
 - **Libraries Used:**
   - `OpenCV` for real-time video processing
   - `cvzone` for easy hand detection
@@ -23,12 +25,18 @@ A real-time Sign Language Recognition system that uses computer vision to identi
 
 ## 📁 Project Structure
 
-📦 sign-language-recognition/
-├── 📁 Dataset/ # Custom dataset of hand gestures
-├── 📄 model.h5 # Trained Keras classification model
-├── 📄 DataCollection.py # Module to create an custom hand dataset
-├── 📄 test.py # Main app for real-time detection
-├── 📄 README.md # You're here
+📦 Sign-Language-Recognition/
+├── 📁 model/
+
+│ ├── keras_model.h5 # Trained deep learning model
+
+│ └── labels.txt # Labels corresponding to model output
+
+├── 📄 DataCollection.py # Script to capture and label new gesture data
+
+├── 📄 test.py # Real-time testing and prediction script
+
+├── 📄 README.md # Project documentation
 
 
 ## 🧪 How it Works
